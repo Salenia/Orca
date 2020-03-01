@@ -1,0 +1,4 @@
+/examples
+/__pycache__
+/core/__pycache__
+/core/hooks/
