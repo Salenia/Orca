@@ -1,10 +1,9 @@
 import tkinter as tk
 
-from core.component import Component
-from core.state import State
+from orca.component import Component
+from orca.state import State
 
 from .components.Counter.main import Counter
-from .components.test import Woe
 
 class App(Component):
 
@@ -22,7 +21,7 @@ class App(Component):
 
         count = Counter(self, number=4)
         count['bg']= self.state.bg
-        #print(f'{count = }')
+
         count.pack(expand=True, fill="both")
         
         return locals()

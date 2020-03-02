@@ -1,4 +1,4 @@
-from core.object import Object
+from orca.object import Object
 
 style= Object({
     'btn': {

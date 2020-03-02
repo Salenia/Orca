@@ -1,6 +1,6 @@
 import tkinter as tk
-from core.component import Component
-from core.state import State
+from orca.component import Component
+from orca.state import State
 
 from .style import style
 
