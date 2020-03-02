@@ -3,3 +3,5 @@
 /core/__pycache__
 /orca/hooks/
 /orca-cli
+LICENSE
+.gitignore
