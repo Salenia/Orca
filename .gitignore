@@ -1,7 +1,7 @@
 /examples
 /__pycache__
 /core/__pycache__
-/orca/hooks/
+Project/orca/hooks/
 /orca-cli
 LICENSE
 .gitignore

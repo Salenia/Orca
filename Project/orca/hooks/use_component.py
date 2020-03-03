@@ -1,5 +1,7 @@
 from ..component import Component
 from ..state import State
+from .use_state import use_state
+import tkinter as tk
 
 component_name= ""
 state= None
@@ -20,7 +22,7 @@ def __get_class(component_name, state, new_locals):
     return component_name
 ''')
 
-def use_component(component_name ="UseComponent"):
+def use_component(component_name ="UseComponent", root= None):
 
     def __outer_warpper__(func):
         if type(component_name) != str:
@@ -52,6 +54,25 @@ def use_component(component_name ="UseComponent"):
 
         return __wrapper
     return __outer_warpper__
+
+
+# root= tk.Tk()
+
+# root.mainloop()
+
+# @use_component(component_name="Hello", root=root)
+# def component(self):
+
+#     clicks , set_clicks = use_state(state_name="clicks", initial_value=0)
+    
+#     lbl = tk.Label(self, text=f'{clicks} Clicks')
+#     lbl.pack(fill="x")
+
+#     if clicks >= 4:
+#         btn =  tk.Button(self, text="Add", command= lambda: set_clicks(clicks+1))
+#         btn.pack()
+    
+#     return locals()
 
 
 
