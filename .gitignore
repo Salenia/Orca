@@ -3,3 +3,5 @@
 /core/__pycache__
 /core/hooks/
 /orca
+/orca-cli
+setup.py
